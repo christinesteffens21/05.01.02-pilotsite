@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+img,
+iframe,
+video {
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+  aspect-ratio: 16 / 9;
+}
+
+header {
+  height: auto;
+  width: 100%;
+  background-color: #d3c2ba;
+  padding-block: 1rem;
+  padding-inline: 3rem;
+  position: fixed;
+  top: 0;
+}
+
+.header {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+.header2,
+.footer {
+  font-size: 20px;
+  text-align: center;
+}
+
+.ig,
+.web,
+.mobil {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin-block: 1rem;
+}
+.ikon {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+footer {
+  padding-top: 2rem;
+  background-color: #d3c2ba;
+}
+
+body {
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-position: 80% 60%;
+}
+
+main {
+  padding-top: 8rem;
+}
+
+h3 {
+  font-family: "Pacifico", cursive;
+}
+
+.text {
+  font-size: 25px;
+  margin-bottom: 1.5rem;
+}
+
+.galleri {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.grid_container {
+  margin-block-end: 1rem;
+  line-height: 1.5rem;
+  padding: 3rem;
+  background-color: #f7f4f0;
+}
+
+.video_container > .youtube,
+.video_container > .video {
+  background-color: #d3c2ba;
+  padding: 1rem;
+  margin-block-end: 1rem;
+}
+
+.youtube h2 > span,
+.video h2 > span {
+  color: #f8f9fa;
+  margin-block-end: 1em;
+  font-size: 1.6rem;
+}
+
+.video_container {
+  margin-block-start: 0;
+}
+.video_container > .video {
+  margin-block-end: 0;
+  align-self: end;
+}
+
+@media (min-width: 770px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .billeder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    object-fit: cover;
+    align-self: stretch;
+    justify-content: center;
+    margin-inline: 2rem;
+  }
+  .box3 {
+    grid-row: span 2;
+    grid-column: span 1;
+    margin-bottom: 29.5%;
+  }
+}
+@media (min-width: 770px) {
+  main > section > .grid_1-1 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(150px, 600px));
+    margin-inline: 2rem;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
